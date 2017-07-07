@@ -16,3 +16,20 @@ p{
 .pos-relative{
   position: relative;
 }
+
+.accent-color{
+  color: $accent-color;
+}
+
+.pad-left{
+  padding-left: 22px !important;
+}
+
+[class*="col"]{
+  &:last-child{
+    padding-right: 0;
+  }
+  &:first-child{
+    padding-left: 0;
+  }
+}

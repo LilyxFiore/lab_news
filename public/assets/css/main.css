@@ -16,6 +16,22 @@ p {
   position: relative;
 }
 
+.accent-color {
+  color: #F7B617;
+}
+
+.pad-left {
+  padding-left: 22px !important;
+}
+
+[class*="col"]:last-child {
+  padding-right: 0;
+}
+
+[class*="col"]:first-child {
+  padding-left: 0;
+}
+
 .nav-top {
   background-color: white;
   box-shadow: none;
@@ -58,6 +74,18 @@ p {
   margin-bottom: 10px;
 }
 
+.new-main--dark {
+  position: relative;
+  background-color: #2B2B2B;
+  color: white;
+  height: 60px;
+  margin: -5px 0;
+  padding: 18px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 .new-main__title {
   color: white;
   font-weight: bold;
@@ -65,7 +93,32 @@ p {
   font-size: 24px;
 }
 
+.new-main__title--small {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  height: 100px;
+}
+
 .new-main__text {
   color: white;
   font-size: 18px;
+}
+
+.new-main__hoy {
+  position: relative;
+  bottom: 72px;
+  left: 76px;
+  text-align: center;
+  padding: 6px 4px;
+  width: 78px;
+  height: 32px;
+  background-color: #F7B617;
+  color: #2B2B2B;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.img-full-w {
+  width: 100%;
 }
