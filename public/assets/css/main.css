@@ -24,6 +24,18 @@ p {
   padding-left: 22px !important;
 }
 
+@media (min-width: 0) {
+  .m-top-new {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .m-top-new {
+    margin-top: -30px;
+  }
+}
+
 .m-top {
   margin-top: -18px;
 }

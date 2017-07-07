@@ -60,11 +60,11 @@ function addMundo(data) {
       '<p class="new-main__hoy">HOY</p></div>');
 
 
-  const col2 =$('<div class="col s12 m6"><div class="col m6"><img src="assets/img/news/news-5.png" alt="" class="img-full-w">' +
+  const col2 =$('<div class="col s12 m6"><div class="col s12 m6"><img src="assets/img/news/news-5.png" alt="" class="img-full-w">' +
       '<p class="new-main--dark">'+ data[5].title +'</p></div>' +
       '<div class="col m6 hide-on-small-only"><img src="assets/img/news/news-6.png" alt="" class="img-full-w">' +
       '<p class="new-main--dark">'+ data[6].title +'</p><p class="new-main__hoy">HOY</p></div>' +
-      '<div class="col s12 m12 m-top-31"><div class="new__small bg-dark"><img src="assets/img/news/news-8.png" alt="" class="img-medio">' +
+      '<div class="col s12 m12 m-top-new"><div class="new__small bg-dark"><img src="assets/img/news/news-8.png" alt="" class="img-medio">' +
       '<span class="new__small--text white-text">'+ data[8].title +'</span></div></div>' +
       '<div class="col s12 m12 m-top-10"><div class="new__small bg-dark"><img src="assets/img/news/news-9.png" alt="" class="img-medio">' +
       '<span class="new__small--text white-text">'+ data[9].title +'</span></div></div></div>');
