@@ -8,6 +8,7 @@ function newMain(){
   });
 }
 
+/** Noticia principal **/
 function addNew(data) {
   console.log(data[0].img);
   const section = $('<section class="container"></section>');
@@ -28,6 +29,7 @@ function addNew(data) {
   addSecundary(data);
 }
 
+/** Noticias secundarias **/
 function addSecundary(data) {
   console.log(data[0].img);
   const section = $('<section class="container"></section>');
@@ -50,6 +52,7 @@ function addSecundary(data) {
   addMundo(data);
 }
 
+/** Noticia seccion Mundo **/
 function addMundo(data) {
   const section = $('<section class="container"></section>');
   const row = $('<div class="row"></div>');
@@ -83,10 +86,40 @@ function addMundo(data) {
       'class="new-main--dark">'+ data[13].title +'</p></div>');
 
   section.append(row);
+  row.append(title);
   row.append(col1);
   row.append(col2);
   row.append(col3);
   row.append(col4);
   $('#root').append(section);
 
+  addTechnology(data);
+}
+
+function addTechnology(data) {
+
+  const section = $('<section class="container"></section>');
+  const row = $('<div class="row"></div>');
+  const title = $('<div class="col s12"><p class="title">TECNOLOGÍA</p><p class="line"></p></div>');
+
+  const col1 = $('<div class="col s12 m6"><img src="assets/img/news/news-14.png" alt="" class="img-full-w"><p ' +
+      'class="new-main--dark">'+ data[14].title +'</p>' +
+      '<p class="new-main__hoy">HOY</p></div>');
+
+
+  const col2 =$('<div class="col s12 m6"><div class="col s12 m6 hide-on-small-only"><img src="assets/img/news/news-15.png" alt="" class="img-full-w">' +
+      '<p class="new-main--dark-xs">'+ data[15].title +'</p></div>' +
+      '<div class="col m6 hide-on-small-only"><img src="assets/img/news/news-16.png" alt="" class="img-full-w">' +
+      '<p class="new-main--dark-xs">'+ data[16].title +'</p><p class="new-main__hoy">HOY</p></div>' +
+      '<div class="col s12 m12 m-top-new"><div class="new__small bg-dark"><img src="assets/img/news/news-17.png" alt="" class="img-medio">' +
+      '<span class="new__small--text white-text">'+ data[17].title +'</span></div></div>' +
+      '<div class="col s12 m12 m-top-10"><div class="new__small bg-dark"><img src="assets/img/news/news-18.png" alt="" class="img-medio">' +
+      '<span class="new__small--text white-text">'+ data[18].title +'</span></div></div></div>');
+
+
+  section.append(row);
+  row.append(title);
+  row.append(col1);
+  row.append(col2);
+  $('#root').append(section)
 }

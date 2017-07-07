@@ -1,19 +1,30 @@
+@mixin bg-dark-text-white{
+  background-color: $bg-dark;
+  color: white;
+}
+
 .new-main{
   position: absolute;
   bottom: 0;
   margin: 0 20px;
   margin-bottom: 10px;
   &--dark{
+    @include bg-dark-text-white;
     position: relative;
-    background-color: $bg-dark;
-    color: white;
     height: 90px;
     margin: -6px 0;
     padding: 18px 10px;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
+    &-xs{
+      @include bg-dark-text-white;
+      height: 63px;
+      margin-top: -5px;
+      padding: 10px;
+    }
   }
+
   &__title{
     color: white;
     font-weight: bold;
@@ -25,6 +36,7 @@
       color: white;
       height: 100px;
     }
+
   }
   &__text{
     color: white;
@@ -58,5 +70,4 @@
     top: 14px;
     left: 42%;
   }
-
 }
