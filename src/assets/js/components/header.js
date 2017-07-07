@@ -1,9 +1,3 @@
-/**js**/
-
-$('#root').append(header());
-/** component carrusel **/
-
-/** component footer js **/
 
 /** component header **/
 function header() {
@@ -30,5 +24,3 @@ function getDate(){
   return (diasSemana[f.getDay()] + " ," +f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
 }
 
-
-/** component news **/

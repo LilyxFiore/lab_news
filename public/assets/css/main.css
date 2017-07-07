@@ -1,4 +1,44 @@
 /**css***/
-h1 {
-  background-color: salmon;
+* {
+  font-family: "Montserrat";
+  color: #2B2B2B;
+}
+
+body {
+  font-size: 14px;
+}
+
+.nav-top {
+  background-color: white;
+  box-shadow: none;
+  border-bottom: 1px solid grey;
+}
+
+.nav-top__list {
+  display: inline-block;
+  color: #2B2B2B;
+}
+
+.nav-top img {
+  margin: 0 10px;
+}
+
+.header-center {
+  padding: 30px 0 20px 0;
+}
+
+.nav-bottom {
+  background-color: #F7B617;
+}
+
+.nav-bottom__list {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+.nav-bottom li {
+  padding-right: 15px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
 }

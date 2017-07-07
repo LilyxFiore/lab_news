@@ -79,11 +79,11 @@ gulp.task("img-watch", ["img"], function (done) {
 });
 
 gulp.task("serve", function () {
-  browserSync.init({
+/* browserSync.init({
     server: {
       baseDir: config.dist
     }
-  });
+  }); */
   gulp.watch(sources.html, ["html-watch"]);
   gulp.watch(sources.sass, ["sass-watch"]);
   gulp.watch(sources.rootJS, ["js-watch"]);
