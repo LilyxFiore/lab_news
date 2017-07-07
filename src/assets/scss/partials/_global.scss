@@ -25,17 +25,39 @@ p{
   padding-left: 22px !important;
 }
 
-@media (min-width: 768px){
-  [class*="col"]{
-    &:last-child{
-      padding-right: 0;
-    }
-    &:first-child{
-      padding-left: 0;
-    }
-  }
-}
+
 
 .m-top{
   margin-top: -18px;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.line{
+  width: 80px;
+  height: 8px;
+  background-color: $bg-main;
+}
+
+.img-medio{
+  width: 40%;
+}
+
+.bg-dark{
+  background-color: $bg-dark;
+}
+
+.m-top-10{
+  margin-top: 10px;
+}
+
+.m-top-31{
+  margin-top: -31px;
+}
+
+.pos-relative{
+  position: relative;
 }

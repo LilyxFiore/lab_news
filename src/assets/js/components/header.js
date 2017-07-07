@@ -8,7 +8,7 @@ function header() {
       '<div class="right"><li><img src="assets/img/fb.png" alt=""></li><li><img src="assets/img/tw.png" alt=""></li><li>' +
       '<img src="assets/img/in.png" alt=""></li></div></ul></nav>');
   const headerCenter = $('<div class="header-center center-align col s12"><img src="assets/img/logoicon.png" alt=""><p>' + getDate() + ' | <img src="assets/img/cloud.png" alt=""> 23°</p></div>');
-  const navBottom = $('<nav class="nav-bottom col s12"><ul class="nav-bottom__list"><li>Lo último</li><li>Opinión</li><li>Cultura</li><li>Perú</li>' +
+  const navBottom = $('<nav class="nav-bottom col s12 m12 hide-on-small-only"><ul class="nav-bottom__list"><li>Lo último</li><li>Opinión</li><li>Cultura</li><li>Perú</li>' +
       '<li>Tecnología</li><li>Mundo</li><li>Economía</li><li>Lifestyle</li><li>Deporte</li></ul></nav>');
 
   header.append(row);

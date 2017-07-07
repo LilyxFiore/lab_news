@@ -7,8 +7,8 @@
     position: relative;
     background-color: $bg-dark;
     color: white;
-    height: 60px;
-    margin: -5px 0;
+    height: 90px;
+    margin: -6px 0;
     padding: 18px 10px;
     font-size: 14px;
     font-weight: bold;
@@ -32,8 +32,8 @@
   }
   &__hoy{
     position: relative;
-    bottom: 72px;
-    left: 76px;
+    bottom: 110px;
+    left: 67px;
     text-align: center;
     padding: 6px 4px;
     width: 78px;
@@ -47,4 +47,16 @@
 
 .img-full-w{
   width: 100%;
+}
+
+
+.new__small{
+  position: relative;
+  &--text{
+    position: absolute;
+    color: white;
+    top: 14px;
+    left: 42%;
+  }
+
 }
