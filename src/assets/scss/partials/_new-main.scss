@@ -45,7 +45,7 @@
   &__hoy{
     position: relative;
     bottom: 110px;
-    left: 67px;
+    left: 30px;
     text-align: center;
     padding: 6px 4px;
     width: 78px;
@@ -55,6 +55,10 @@
     font-weight: bold;
     font-size: 16px;
   }
+}
+
+.xs{
+  bottom: 93px;
 }
 
 .img-full-w{

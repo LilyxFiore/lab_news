@@ -149,7 +149,7 @@ function addTechnology(data) {
   const col2 =$('<div class="col s12 m6"><div class="col s12 m6 hide-on-small-only"><img src="assets/img/news/news-15.png" alt="" class="img-full-w">' +
       '<p class="new-main--dark-xs">'+ data[15].title +'</p></div>' +
       '<div class="col m6 hide-on-small-only"><img src="assets/img/news/news-16.png" alt="" class="img-full-w">' +
-      '<p class="new-main--dark-xs">'+ data[16].title +'</p><p class="new-main__hoy">HOY</p></div>' +
+      '<p class="new-main--dark-xs">'+ data[16].title +'</p><p class="new-main__hoy xs">HOY</p></div>' +
       '<div class="col s12 m12 m-top-new"><div class="new__small bg-dark"><img src="assets/img/news/news-17.png" alt="" class="img-medio">' +
       '<span class="new__small--text white-text">'+ data[17].title +'</span></div></div>' +
       '<div class="col s12 m12 m-top-10"><div class="new__small bg-dark"><img src="assets/img/news/news-18.png" alt="" class="img-medio">' +
