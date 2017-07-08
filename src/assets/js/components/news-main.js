@@ -10,7 +10,6 @@ function newMain(){
 
 /** Noticia principal **/
 function addNew(data) {
-  console.log(data[0].img);
   const section = $('<section class="container"></section>');
   const row = $('<div class="row"></div>');
   const col = $('<div class="col s12 m12 pos-relative m-top"></div>');
@@ -31,7 +30,6 @@ function addNew(data) {
 
 /** Noticias secundarias **/
 function addSecundary(data) {
-  console.log(data[0].img);
   const section = $('<section class="container"></section>');
   const row = $('<div class="row"></div>');
   const col1 = $('<div class="col s12 m6"><img src="assets/img/news/'+ data[1].img +'" alt="" class="img-full-w">' +
@@ -156,5 +154,27 @@ function addEducacion(data) {
   row.append(title);
   row.append(col1);
   row.append(col2);
+  $('#root').append(section);
+
+  addOpinion(data);
+}
+
+function addOpinion(data) {
+  const section = $('<section class="container"></section>');
+  const row = $('<div class="row"></div>');
+  const title = $('<div class="col s12"><p class="title">Opinión</p><p class="line"></p></div>');
+
+  const col1 = $('<div class="col s12 m3 hide-on-small-only"><img src="assets/img/news/' + data[24].img + '" alt="" class="img-full-w"><p ' +
+      'class="new-main--dark">'+ data[24].title +'</p></div>' +
+      '<div class="col s12 m3 hide-on-small-only"><img src="assets/img/news/' + data[25].img + '" alt="" class="img-full-w"><p ' +
+      'class="new-main--dark">'+ data[25].title +'</p>' +
+      '<p class="new-main__hoy">HOY</p></div><div class="col s12 m3 hide-on-small-only"><img src="assets/img/news/' + data[26].img + '" alt="" class="img-full-w"><p ' +
+      'class="new-main--dark">'+ data[26].title +'</p>' +
+      '<p class="new-main__hoy">HOY</p></div><div class="col s12 m3 hide-on-small-only"><img src="assets/img/news/' + data[27].img + '" alt="" class="img-full-w"><p ' +
+      'class="new-main--dark">'+ data[27].title +'</p></div>');
+
+  section.append(row);
+  row.append(title);
+  row.append(col1);
   $('#root').append(section);
 }
