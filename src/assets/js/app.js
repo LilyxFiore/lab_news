@@ -1,3 +1,9 @@
 /**js**/
-var root = $('#root');
-root.text("dd");
+
+$('#root').append(header());
+
+
+$('#root').append(newMain());
+
+
+

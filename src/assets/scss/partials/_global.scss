@@ -1,0 +1,98 @@
+@import "variab";
+
+*{
+  font-family: $font-family;
+  color: $base-color;
+}
+
+body{
+  font-size: 14px;
+}
+
+p{
+  margin: 8px 0;
+}
+
+.pos-relative{
+  position: relative;
+}
+
+.accent-color{
+  color: $accent-color;
+}
+
+.pad-left{
+  padding-left: 22px !important;
+}
+
+
+@media (min-width: 0) {
+  .m-top-new {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .m-top-new {
+    margin-top: -30px;
+  }
+}
+
+.m-top{
+  margin-top: -18px;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.line{
+  width: 80px;
+  height: 8px;
+  background-color: $bg-main;
+}
+
+.img-medio{
+  width: 40%;
+}
+
+.bg-dark{
+  background-color: $bg-dark;
+}
+
+.m-top-10{
+  margin-top: 10px;
+}
+
+.m-top-31{
+  margin-top: -31px;
+}
+
+.pos-relative{
+  position: relative;
+}
+
+/** css carrousel **/
+.owl-prev, .owl-next{
+  position: absolute;
+  top: 35%;
+
+}
+
+.owl-prev{
+  left: -24px;
+}
+
+.owl-next{
+  right: -24px;
+}
+
+.carrousel{
+  padding: 30px;
+  border: 3px solid $accent-color;
+}
+
+.pad-20{
+  padding: 20px;
+}

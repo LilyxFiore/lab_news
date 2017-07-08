@@ -1,0 +1,77 @@
+@mixin bg-dark-text-white{
+  background-color: $bg-dark;
+  color: white;
+}
+
+.new-main{
+  position: absolute;
+  bottom: 0;
+  margin: 0 20px;
+  margin-bottom: 10px;
+  &--dark{
+    @include bg-dark-text-white;
+    position: relative;
+    height: 90px;
+    margin: -6px 0;
+    padding: 18px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &-xs{
+      @include bg-dark-text-white;
+      height: 63px;
+      margin-top: -5px;
+      padding: 10px;
+    }
+  }
+
+  &__title{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    &--small{
+      font-weight: bold;
+      font-size: 16px;
+      color: white;
+      height: 100px;
+    }
+
+  }
+  &__text{
+    color: white;
+    font-size: 18px;
+  }
+  &__hoy{
+    position: relative;
+    bottom: 110px;
+    left: 30px;
+    text-align: center;
+    padding: 6px 4px;
+    width: 78px;
+    height: 32px;
+    background-color: #F7B617;
+    color: #2B2B2B;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+.xs{
+  bottom: 93px;
+}
+
+.img-full-w{
+  width: 100%;
+}
+
+
+.new__small{
+  position: relative;
+  &--text{
+    position: absolute;
+    color: white;
+    top: 14px;
+    left: 42%;
+  }
+}
