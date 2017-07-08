@@ -23,3 +23,14 @@ function addFooter() {
 
   return  footer1;
 }
+
+const btn = $('<button class="btn circle btn-top">Subir</button>');
+
+btn.click(
+    function (e) {
+      $('html, body').animate({scrollTop: '0px'}, 800);
+    }
+);
+
+
+$('#root').after(btn);

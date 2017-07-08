@@ -8,11 +8,12 @@ $('#root').append(newMain());
 
 
 
+
 /** component carrusel **/
 
 function addCarrosul(){
-  const carrousel = $('<section class="container pos-relative carrousel"></section>');
-  const owlCarrousel = $('<section class="owl-carousel owl-theme"></section>');
+  const carrousel = $('<section class="container carrousel"></section>');
+  const owlCarrousel = $('<section class="owl-carousel owl-theme pos-relative"></section>');
   const item1 = $('<div class="item"><img src="assets/img/news/news-28.png" alt=""></div>');
   const item2 = $('<div class="item"><img src="assets/img/news/news-29.png" alt=""></div>');
   const item3 = $('<div class="item"><img src="assets/img/news/news-30.png" alt=""></div>');
@@ -36,10 +37,10 @@ function addCarrosul(){
       items:3
     },
     1000:{
-      items:5
+      items:4
     }
   }
-})
+});
 
   return carrousel;
 }
@@ -69,6 +70,17 @@ function addFooter() {
 
   return  footer1;
 }
+
+const btn = $('<button class="btn circle btn-top">Subir</button>');
+
+btn.click(
+    function (e) {
+      $('html, body').animate({scrollTop: '0px'}, 800);
+    }
+);
+
+
+$('#root').after(btn);
 
 /** component header **/
 function header() {

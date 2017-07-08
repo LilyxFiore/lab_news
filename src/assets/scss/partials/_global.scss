@@ -96,3 +96,11 @@ p{
 .pad-20{
   padding: 20px;
 }
+
+.btn-top{
+  background-color: $bg-dark;
+  color: white;
+  position: relative;
+  bottom: 10px;
+  left: 80%;
+}

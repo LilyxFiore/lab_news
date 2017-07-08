@@ -94,6 +94,14 @@ p {
   padding: 20px;
 }
 
+.btn-top {
+  background-color: #2B2B2B;
+  color: white;
+  position: relative;
+  bottom: 10px;
+  left: 80%;
+}
+
 .nav-top {
   background-color: white;
   box-shadow: none;
