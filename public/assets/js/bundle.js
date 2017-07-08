@@ -135,6 +135,7 @@ function addMundo(data) {
   addTechnology(data);
 }
 
+/** seccion tecnologia **/
 function addTechnology(data) {
 
   const section = $('<section class="container"></section>');
@@ -155,10 +156,44 @@ function addTechnology(data) {
       '<div class="col s12 m12 m-top-10"><div class="new__small bg-dark"><img src="assets/img/news/news-18.png" alt="" class="img-medio">' +
       '<span class="new__small--text white-text">'+ data[18].title +'</span></div></div></div>');
 
+  section.append(row);
+  row.append(title);
+  row.append(col1);
+  row.append(col2);
+  $('#root').append(section);
+
+  addEducacion(data);
+}
+
+
+/** seccion educacion **/
+
+function addEducacion(data) {
+
+  const section = $('<section class="container"></section>');
+  const row = $('<div class="row"></div>');
+  const title = $('<div class="col s12"><p class="title">EDUCACIÓN</p><p class="line"></p></div>');
+
+  const col1 =$('<div class="col s12 m6"><div class="col s12 m6"><img src="assets/img/news/news-19.png" alt="" class="img-full-w">' +
+      '<p class="new-main--dark-xs">'+ data[19].title +'</p></div>' +
+      '<div class="col s12 m6"><img src="assets/img/news/news-20.png" alt="" class="img-full-w">' +
+      '<p class="new-main--dark-xs">'+ data[20].title +'</p><p class="new-main__hoy xs">HOY</p></div>' +
+      '<div class="col s12 m12 m-top-new"><div class="new__small bg-dark"><img src="assets/img/news/news-21.png" alt="" class="img-medio">' +
+      '<span class="new__small--text white-text">'+ data[21].title +'</span></div></div>' +
+      '</div></div>');
+
+
+  const col2 =$('<div class="col s12 m6"><div class="col s12 m6"><img src="assets/img/news/news-21.png" alt="" class="img-full-w">' +
+      '<p class="new-main--dark-xs">'+ data[21].title +'</p></div>' +
+      '<div class="col s12 m6"><img src="assets/img/news/news-22.png" alt="" class="img-full-w">' +
+      '<p class="new-main--dark-xs">'+ data[22].title +'</p><p class="new-main__hoy xs">HOY</p></div>' +
+      '<div class="col s12 m12 m-top-new"><div class="new__small bg-dark"><img src="assets/img/news/news-23.png" alt="" class="img-medio">' +
+      '<span class="new__small--text white-text">'+ data[23].title +'</span></div></div>' +
+      '</div></div>');
 
   section.append(row);
   row.append(title);
   row.append(col1);
   row.append(col2);
-  $('#root').append(section)
+  $('#root').append(section);
 }
