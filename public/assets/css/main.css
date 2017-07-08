@@ -90,6 +90,10 @@ p {
   border: 3px solid #F7B617;
 }
 
+.pad-20 {
+  padding: 20px;
+}
+
 .nav-top {
   background-color: white;
   box-shadow: none;
@@ -202,4 +206,10 @@ p {
   color: white;
   top: 14px;
   left: 42%;
+}
+
+/** css  footer **/
+footer {
+  background-color: #F7B617;
+  padding: 10px;
 }

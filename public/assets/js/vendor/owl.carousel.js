@@ -1669,7 +1669,7 @@
 				$this.data('owl.carousel', data);
 
 				$.each([
-					'<', '>', 'to', 'destroy', 'refresh', 'replace', 'add', 'remove'
+					'next', 'prev', 'to', 'destroy', 'refresh', 'replace', 'add', 'remove'
 				], function(i, event) {
 					data.register({ type: Owl.Type.Event, name: event });
 					data.$element.on(event + '.owl.carousel.core', $.proxy(function(e) {
@@ -2759,6 +2759,15 @@
 		 */
 		this._handlers = {
 			'prepared.owl.carousel': $.proxy(function(e) {
+				if (e.namespace && this._core.settings.dotsData) {
+					this._templates.push('<div class="' + this._core.settings.dotClass + '">' +
+						$(e.content).find('[data-dot]').addBack('[data-dot]').attr('data-dot') + '</div>');
+				}
+			}, this),
+			'added.owl.carousel': $.proxy(function(e) {
+				if (e.namespace && this._core.settings.dotsData) {
+					this._templates.splice(e.position, 0, this._templates.pop());
+				}
 			}, this),
 			'remove.owl.carousel': $.proxy(function(e) {
 				if (e.namespace && this._core.settings.dotsData) {
@@ -2804,11 +2813,20 @@
 	 */
 	Navigation.Defaults = {
 		nav: false,
-		navText: [ '<', '>' ],
+		navText: [ 'prev', 'next' ],
 		navSpeed: false,
 		navElement: 'div',
 		navContainer: false,
+		navContainerClass: 'owl-nav',
+		navClass: [ 'owl-prev', 'owl-next' ],
 		slideBy: 1,
+		dotClass: 'owl-dot',
+		dotsClass: 'owl-dots',
+		dots: true,
+		dotsEach: false,
+		dotsData: false,
+		dotsSpeed: false,
+		dotsContainer: false
 	};
 
 	/**
@@ -2838,6 +2856,16 @@
 				this.next(settings.navSpeed);
 			}, this));
 
+		// create DOM structure for absolute navigation
+		if (!settings.dotsData) {
+			this._templates = [ $('<div>')
+				.addClass(settings.dotClass)
+				.append($('<span>'))
+				.prop('outerHTML') ];
+		}
+
+		this._controls.$absolute = (settings.dotsContainer ? $(settings.dotsContainer)
+			: $('<div>').addClass(settings.dotsClass).appendTo(this.$element)).addClass('disabled');
 
 		this._controls.$absolute.on('click', 'div', $.proxy(function(e) {
 			var index = $(e.target).parent().is(this._controls.$absolute)

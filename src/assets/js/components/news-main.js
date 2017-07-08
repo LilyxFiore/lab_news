@@ -177,4 +177,8 @@ function addOpinion(data) {
   row.append(title);
   row.append(col1);
   $('#root').append(section);
+
+  $('#root').append(addCarrosul());
+
+  $('#root').append(addFooter());
 }

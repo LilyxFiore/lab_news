@@ -4,9 +4,9 @@ function addCarrosul(){
   const carrousel = $('<section class="container pos-relative carrousel"></section>');
   const owlCarrousel = $('<section class="owl-carousel owl-theme"></section>');
   const item1 = $('<div class="item"><img src="assets/img/news/news-28.png" alt=""></div>');
-  const item2 = $('<div class="item"><img src="assets/img/news/news-28.png" alt=""></div>');
-  const item3 = $('<div class="item"><img src="assets/img/news/news-28.png" alt=""></div>');
-  const item4 = $('<div class="item"><img src="assets/img/news/news-28.png" alt=""></div>');
+  const item2 = $('<div class="item"><img src="assets/img/news/news-29.png" alt=""></div>');
+  const item3 = $('<div class="item"><img src="assets/img/news/news-30.png" alt=""></div>');
+  const item4 = $('<div class="item"><img src="assets/img/news/news-31.png" alt=""></div>');
 
   carrousel.append(owlCarrousel);
   owlCarrousel.append(item1);
@@ -31,4 +31,5 @@ function addCarrosul(){
   }
 })
 
+  return carrousel;
 }
